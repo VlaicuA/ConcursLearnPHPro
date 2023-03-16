@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Inregistrare</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <style>
+        @media (max-width:600px){
+            .flex-item-left, .flex-item-right{
+                flex: 100%;
+            }        
+        }
+        .flex-container {
+            display: flex;
+            padding-bottom: 50px;
+        }
+        .flex-item-left {
+            flex: 40%;
+        }
+        .flex-item-right {
+            flex: 60%;
+        }
+        .flex-container1, .flex-container2 {
+            display: flex;
+            align-items: stretch;
+        }
+        .flex-item-right {
+            display: flex;
+            border: 1px solid rgb(90, 29, 146);
+            background-color: #4b474e65;
+            width: fit-content;
+            height: 350px;
+            padding: 30px;
+            margin: 30px;
+            align-items: center;
+            justify-content: center;
+            place-self: center;
+        }
+        input {
+            background-color: rgb(197, 235, 222);
+        }
+        h2 {
+            color: rgb(8, 8, 121);
+        }
+        input:hover {
+            background-color: #b6d40865;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <nav class="navigatie">
+                <a href="../pages/about-me.html">About Me</a><br>
+                <a href="../pages/contacte.html">Contacte</a><br>
+                <a href="../pages/login.html">Login</a><br>
+                <a href="../pages/de-vizitat.html">De Vizitat</a><br>
+                <a href="../index.html">Back To Home Page</a><br>
+            </nav>
+        </div>
+        <div class="flex-item-right">
+            <form action="script.php" method="get" name="register">
+                <p style="font-size: 30px;"> Inregistrare</p> <br>
+                Nume:<br>
+                <input type="text" name="name" placeholder="scrie numele" ><br>                  
+                Penume:<br>
+                <input type="text" name="prenume" placeholder="scrie prenume"><br>
+                Email:<br>
+                <input type="email" name="email" id="email" placeholder="scrie email"><br>
+                Numar de telefon:<br>
+                <input type="number" name="number" id="phone-number" placeholder="scrie nr de telefon"><br>
+                Parola:<br>
+                <input type="password" name="password" id="password" placeholder="scrie parola"><br>
+                Rescrie parola:<br>
+                <input type="password" name="password" id="password" placeholder="rescrie parola"><br>
+                <input type="button" value="submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright&copyPetronela Ailoaiei</p>
+    </footer>
+</body>
+</html>

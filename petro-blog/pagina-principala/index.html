@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principala</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style> 
+    @media (max-width: 600px){
+        .flex-item-left, .flex-item-right, navigatie {
+            flex: 100%
+        }
+    }
+        img {
+            width: 400px;
+        }
+        #myimg {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            object-position: 0% 0%;
+            animation: mymove 5s infinite;
+        } 
+        @keyframes mymove {
+            0% {
+            object-position: 0% 0%;
+            }
+            25% {
+            object-position: 20% 0%;
+            }
+            100% {
+            object-position: 100% 100%;
+            }
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flec-item-left {
+            flex: 60%;  
+        }
+        .flex-item-right {
+            flex: 40%;
+            justify-content: center;
+            align-content: center;
+            font-size: 30px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <img src="imagini/iasi.jpg" alt="imagine" id="myimg">  
+        </div>
+        <div class="flex-item-right" style="color:rgb(3, 3, 112)">
+            <h1>Welcome To My Blog! <br> Un Blog despre <br> Iasi</h1>
+        </div>
+    </div>
+    <nav class="navigatie">
+        <a href="pages/about-me.html">About Me</a>
+        <a href="pages/contacte.html">Contacte</a>
+        <a href="pages/register.html">Register</a>
+        <a href="pages/login.html">Login</a>
+        <a href="pages/de-vizitat.html">De Vizitat</a>
+    </nav>       
+    <footer>
+        <p>Copyright&copyPetronela Ailoaiei</p>
+    </footer>
+</body>
+</html>
