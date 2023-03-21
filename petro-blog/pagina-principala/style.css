@@ -176,6 +176,9 @@ body{
     animation: slideRight 1s ease-in-out;
 }
 
+.section_title{
+    font-size: 30px;
+}
 
 .buttons {
     width: 220px;
