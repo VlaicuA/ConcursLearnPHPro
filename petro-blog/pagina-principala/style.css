@@ -9,6 +9,27 @@ margin: 0px;
 padding: 0px;
 }
 
+@keyframes slideLeft {
+    0%{
+        transform: translateX(-100vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(100vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* =========================================== */
+
+
 body{
     display: flex;
     justify-content: center;
@@ -114,19 +135,20 @@ body{
     margin-left: 300px;
 }
 
-.accommodation_section {
+.accommodation_section, .restaurants_section {
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 35px;
+    margin-top: 40px;
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 .accommodation_section_left{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     padding-left: 10px;
 }
@@ -155,29 +177,9 @@ body{
 }
 
 
-@keyframes slideLeft {
-    0%{
-        transform: translateX(-100vh);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideRight {
-    0%{
-        transform: translateX(100vh);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
-/* =========================================== */
-
 .buttons {
-    width: 200px;
-    height: 70px;
+    width: 220px;
+    height: 50px;
     background-color: var(--buttons);
     color: white;
     border: none;
@@ -186,4 +188,26 @@ body{
 }
 .buttons:hover {
     background-color: var(--buttons-hover);
+}
+
+.restaurants_section_left{
+    width: 50%;
+}
+
+.restaurants_section_left img{
+    width: 470px;
+}
+
+.restaurants_section_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.restaurants_section_right p{
+    text-align: justify;
+    font-size: 20px;
 }
