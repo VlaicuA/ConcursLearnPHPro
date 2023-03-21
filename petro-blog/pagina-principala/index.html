@@ -20,7 +20,7 @@
             height: 400px;
             object-fit: cover;
             object-position: 0% 0%;
-            animation: mymove 5s infinite;
+            animation: mymove 10s infinite;
         } 
         @keyframes mymove {
             0% {
@@ -41,32 +41,40 @@
             flex: 60%;  
         }
         .flex-item-right {
+            display: flex;
             flex: 40%;
             justify-content: center;
             align-content: center;
-            font-size: 30px;
-            padding-left: 40px;
+            font-size: 25px;
+            padding: 40px;
+            border: 1px solid blue;
         }
     </style>
 </head>
 <body>
     <div class="flex-container">
         <div class="flex-item-left">
-            <img src="imagini/iasi.jpg" alt="imagine" id="myimg">  
+            <img src="imagini/iasi.jpg" alt="imagine" id="myimg">
+            
         </div>
-        <div class="flex-item-right" style="color:rgb(3, 3, 112)">
-            <h1>Welcome To My Blog! <br> Un Blog despre <br> Iasi</h1>
+        <div class="flex-item-right">
+            <h1>Welcome To Our Blog! <br> Un Blog despre Iasi. <br> Aici puteti gasi informatii despre <br>
+                puncte de atractie turistica, cazare si transport, restaurante si magazine.</h1>
         </div>
     </div>
     <nav class="navigatie">
-        <a href="pages/about-me.html">About Me</a>
+        <a href="pages/despre.html">Despre</a>
         <a href="pages/contacte.html">Contacte</a>
         <a href="pages/register.html">Register</a>
         <a href="pages/login.html">Login</a>
-        <a href="pages/de-vizitat.html">De Vizitat</a>
+        <a href="pages/de-vizitat.html">Vizitare</a>
+        <a href="pages/cazare.html">Cazare</a>
+        <a href="pages/magazine.html">Magazine</a>
+        <a href="pages/restaurante.html">Restaurante</a>
+        <a href="pages/transporturi.html">Transporturi</a>
     </nav>       
     <footer>
-        <p>Copyright&copyPetronela Ailoaiei</p>
+        <p>Copyright&copy Team 2.1 LearnPHP</p>
     </footer>
 </body>
 </html>

@@ -16,32 +16,32 @@
 body {
     background-color: rgb(233, 230, 207);
 }
-h1, h2 {
-    color: rgb(14, 14, 151);
-}
 a {
+    color: white;
     text-decoration: none;
+    border-radius: 1px solid black;
     font-size: 20px;
     padding: 10px;
     margin: 5px;
 }
 a:hover {
-    background-color: rgb(126, 243, 91);
+    border: 1px solid black;
     margin: 5px;
     padding: 5px;
 }
 .navigatie a {
-    width: 100px;
-    border: 1px solid blue;
-    background-color: rgb(142, 211, 216);
+    width: 85px;
+    border-radius: 10px;
+    background-color: #FF735C;
     display: inline-flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 footer {
+    color: white;
+    border-radius: 10px;
     display: flex;
-    border: 1px solid rgb(21, 6, 36);
-    background-color: rgb(172, 167, 236);
+    background-color: #FF735C;
     align-items: center;
     justify-content: center;
     margin: 10px;
