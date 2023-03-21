@@ -1,5 +1,7 @@
 :root{
     --top_link: #000000;
+    --buttons: #FF735C;
+    --buttons-hover: #fc9331;
 }
 
 *{
@@ -122,6 +124,16 @@ body{
 
 .accommodation_section_left{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.accommodation_section_left p{
+    text-align: justify;
+    font-size: 20px;
 }
 
 .accommodation_section_right{
@@ -162,3 +174,16 @@ body{
 }
 
 /* =========================================== */
+
+.buttons {
+    width: 200px;
+    height: 70px;
+    background-color: var(--buttons);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.buttons:hover {
+    background-color: var(--buttons-hover);
+}
