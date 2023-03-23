@@ -169,6 +169,9 @@ body{
 
 .accommodation_section_right, .shops_section_right{
     width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .accommodation_section_right img{
@@ -204,6 +207,8 @@ body{
 
 .restaurants_section_left, .transport_section_left{
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .restaurants_section_left img{
