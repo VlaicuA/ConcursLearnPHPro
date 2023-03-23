@@ -47,3 +47,34 @@ footer {
     margin: 10px;
     height: 50px;
 }
+
+/* Animations */
+
+.slideLeft{
+    animation: slideLeft 1s ease-in-out;
+}
+
+.slideRight{
+    animation: slideRight 1s ease-in-out;
+}
+
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(-100vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(100vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* =========================================== */
