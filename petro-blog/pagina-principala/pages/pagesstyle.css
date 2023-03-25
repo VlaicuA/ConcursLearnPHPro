@@ -1,3 +1,10 @@
+:root{
+    --buttons: #FF735C;
+    --buttons-hover: #fc9331;
+    --heading: #3C43F3;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -17,6 +24,7 @@
     height: auto;
     width: 1200px;
     background-color: white;
+    align-items: center;
 }
 
 .emblem {
@@ -26,9 +34,11 @@
 
 .top_section {
     display: flex;
+    width: 1200px;
     justify-content:space-between;
     align-items: center;
     padding: 20px;
+    margin-right: 10px;
 }
 
 .nav_top{
@@ -59,7 +69,6 @@
     border: 1px solid lightgray;
     padding: 2px;
     font-size: 20px;
-    color: lightgray;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     
@@ -86,4 +95,93 @@
 
 .search_button:hover {
     background-color: aliceblue;
+}
+
+.accommodation_section{
+    width: 900px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.accommodation_div{
+    display: flex;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.accommodation_picture{
+    width: 300px;
+    border-radius: 11px;
+}
+
+.accommodation_picture:hover {
+    box-shadow: 5px 5px 10px grey;
+}
+
+.checked {
+    color: orange;
+  }
+
+.accommodation_right_div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+
+
+  .buttons {
+    width: 220px;
+    height: 40px;
+    background-color: var(--buttons);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.buttons:hover {
+    background-color: var(--buttons-hover);
+}
+
+.accommodation_right_div p{
+    text-align: justify;
+}
+
+.accommodation_right_div h2{
+    color: var(--heading);
+    font-size: 28px;
+}
+
+.quick_links{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+.quick_links_div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick_links_div p{
+    padding-bottom: 20px;
+}
+
+.quick_links_div a{
+    text-decoration: none;
+    color: black;
+}
+
+.quick_links_div a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 20px;
 }
