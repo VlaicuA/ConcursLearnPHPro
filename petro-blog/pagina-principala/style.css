@@ -44,9 +44,10 @@ body{
     flex-direction: column;
     height: auto;
     width: 1200px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     background-color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px lightblue;
 }
 
 .nav_section{
