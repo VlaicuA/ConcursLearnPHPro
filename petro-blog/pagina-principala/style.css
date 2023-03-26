@@ -1,5 +1,5 @@
 :root{
-    --top_link: #000000;
+    --top_link: #ffffff;;
     --buttons: #FF735C;
     --buttons-hover: #fc9331;
 }
@@ -76,7 +76,7 @@ body{
     width: 180px;
     height: 40px;
     background-color: var(--buttons);
-    color: white;
+    color: var(--top_link);
     border: none;
     border-radius: 10px;
     font-size: 22px;
